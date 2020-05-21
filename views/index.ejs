@@ -10,18 +10,21 @@
     <img src="images/FairFoods.jpg" alt="Photo of Fair Foods at Lena Park">
     <h1>Fair Foods at Lena Park</h1>
     <p>Use this page to reserve one or more bags of fresh produce. Pick up on Tuesday afternoons at Lena Park. Each bag costs $2.</p>
-    <form action="/order" method="post">
-        <label for="name">Name: </label>
-        <input type="text" id="name" name="name" placeholder="Richard Hendricks">
-        <label for="number">Number: </label>
-        <select id="number" name="number">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-        </select>
-        <input type="submit" value="Save">
-    </form>
+    <div id="order">
+        <p>How many grocery bags are you planning to purchase?</p>
+        <form action="/order" method="post">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="Richard Hendricks">
+            <label for="number">Number: </label>
+            <select id="number" name="number">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <input type="submit" value="Save">
+        </form>
+    </div>
 </body>
 </html>
