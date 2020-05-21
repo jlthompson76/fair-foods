@@ -2,6 +2,7 @@ const express = require('express');
 const body_parser = require('body-parser');
 const mongodb = require('mongodb');
 const dotenv = require('dotenv').config();
+const path = require('path');
 
 const PORT = process.env.PORT || 3000;
 const app = express();
@@ -9,6 +10,8 @@ app.set('view engine', 'ejs');
 
 app.use(body_parser.json());
 app.use(body_parser.urlencoded({ extended: true }));
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 let db_handler;
 const DB_URL = process.env.DB_URL;
