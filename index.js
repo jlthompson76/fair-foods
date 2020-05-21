@@ -18,6 +18,10 @@ const DB_URL = process.env.DB_URL;
 const DB_NAME = process.env.DB_NAME;
 const COLLECTION_NAME = process.env.COLLECTION_NAME;
 
+app.get('/', (req, res) => {
+    res.send('Fair Foods Reservation System');
+});
+
 app.listen(PORT, () => {
     console.log(`Fair Foods is listening on port ${PORT}!`);
 
