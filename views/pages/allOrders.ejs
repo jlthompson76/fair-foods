@@ -1,0 +1,27 @@
+<!-- Insert Head -->
+<%- include('../partials/head.ejs') %>
+
+<body>
+  <div class="jumbotron">
+    <div class="jumbotron-text">
+      <h1>All Fair Foods Orders at Lena Park</h1>
+      <p>Below is a list of all Fair Foods orders placed at Lena Park as of <%= date %>.</p>
+    </div>
+    <div class="jumbotron-photo">
+      <img src="images/FairFoods.jpg" alt="Photo of Fair Foods at Lena Park Community Development Corporation in Dorchester, MA">
+    </div>
+  </div>
+  <div class="all-orders">
+    <ul>
+      <!-- <% all_orders.forEach( (single_order) => {  %>
+      <li><%= single_order.name %> - <%= single_order.number %> bag(s)</li>
+      <br>
+      <br>
+      <% }) %> -->
+    </ul>
+  </div>
+  <footer>
+    <p>To submit a new order, please visit our <a href="index.ejs">homepage</a>.</p>
+  </footer>
+</body>
+</html>

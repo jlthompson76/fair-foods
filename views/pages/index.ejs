@@ -1,0 +1,36 @@
+<!-- Insert Head -->
+<%- include('../partials/head.ejs') %>
+
+<body>
+  <div class="jumbotron">
+    <div class="jumbotron-text">
+      <h1>Fair Foods at Lena Park</h1>
+      <p>Use this page to reserve one or more bags of fresh produce. Pick up on Tuesday afternoons at Lena Park. Each bag costs $2.
+      <br>Learn more about Fair Foods <a href="http://www.fairfoods.org/index.php?page=food_rescue.htm">here</a>.</p>
+    </div>
+    <div class="jumbotron-photo">
+      <img src="images/FairFoods.jpg" alt="Photo of Fair Foods at Lena Park Community Development Corporation in Dorchester, MA">
+    </div>
+  </div>
+
+  <div id="order">
+    <p>How many grocery bags are you planning to purchase?</p>
+    <form action="/order" method="post">
+      <label for="name">Name: </label>
+      <input type="text" id="name" name="name" placeholder="Richard Hendricks">
+      <label for="number">Number: </label>
+      <select id="number" name="number">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <input type="submit" class="btn btn-light" value="Save"> <a href="allOrders.ejs">View all orders</a>
+    </form>
+
+    <!-- Success Message -->
+    <p class="alert-success">insert message here using ejs</p>
+  </div>
+</body>
+</html>
