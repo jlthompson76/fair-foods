@@ -32,7 +32,7 @@ Now, let's build the template for the main page of the app.  Here are some tips 
 * Create this file in the _views_ folder
 * Create the homepage with static HTML at first, to match the mockup
 * Link to the [Bootstrap CDN](https://getbootstrap.com/docs/4.5/getting-started/introduction/) CSS library so we can take advantage of its useful predefined classes
-* The Bootstrap class `jumbotron` will create the large header.  Inside the jumbotron, you can add paragraphs, h1s, etc. to separate text.
+* The Bootstrap class `jumbotron` will create the large header. Inside the jumbotron, you can add paragraphs, h1s, etc. to separate text.
 * Your jumbotron should display a title ("Fair Foods at Lena Park") and instructions ("Use this page to reserve one or more bags of fresh produce. Pick up on Tuesday afternoons at Lena Park. Each bag costs $2. Learn more about Fair Foods [here](http://www.fairfoods.org/index.php?page=food_rescue.htm)")
 * Put the [FairFoods.jpg](public/images/logos/FairFoods.jpg) image into your jumbotron. How can you make the text on the left line up with the picture on the right?
 * Create a form with an `action` and a `method`. The action should be something like `'/order'`. When the user clicks the "Save" button, our app will eventually create a new record with their order. Therefore, what HTTP method should we use for this form?
