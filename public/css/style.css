@@ -1,0 +1,9 @@
+body {
+  margin-left: 25px;
+}
+
+.jumbotron {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
